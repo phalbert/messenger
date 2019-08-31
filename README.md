@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/b682d0ce3040893c6d81/maintainability)](https://codeclimate.com/github/phalbert/messenger/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b682d0ce3040893c6d81/test_coverage)](https://codeclimate.com/github/phalbert/messenger/test_coverage)
+
 # Messenger
 
 A serverless message sender service for sending smses and emails
