@@ -1,5 +1,13 @@
-.chalice/deployments/
-.chalice/venv/
+#coverage
+src/.chalice/deployments/
+.deps
+.DS_Store
+htmlcov
+venv
+coverage
+.coverage
+*.sw[pq]
+*.py[co]
 
 # https://github.com/aws/chalice/blob/master/.gitignore
 sample/
