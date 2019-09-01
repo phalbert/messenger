@@ -1,5 +1,7 @@
 from chalice import Chalice
-from chalicelib.models import Email
+import os
+
+from chalicelib.controllers.email import EmailController
 
 app = Chalice(app_name='messenger')
 
@@ -9,10 +11,7 @@ def index():
 
 @app.route('/emails', methods=['POST'])
 def create_email():
-    email_as_json = app.current_request.json_body
-    email = Email(email_as_json)
-    return email.send()
-    # return {'email': email.__dict__}
+    return EmailController(app, os.environ).send_email_sns()
 
 
 

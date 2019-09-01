@@ -1,6 +1,6 @@
 """Test messages"""
 import asyncio
-from src.chalicelib.services import NotificationService
+from src.chalicelib.controllers.email import EmailController
 from src.chalicelib.models import Email
 
 def test_email_output():
@@ -11,7 +11,7 @@ def test_email_output():
         message='',
         subject='test'
     )
-    service = NotificationService()
+    service = EmailController()
 
     result = service.send_email(mail)
     assert isinstance(result, dict)

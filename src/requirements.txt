@@ -2,3 +2,4 @@ chalice==1.11.0
 sendgrid
 aiohttp
 environs
+boto3
